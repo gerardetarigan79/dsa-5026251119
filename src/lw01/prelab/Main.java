@@ -27,7 +27,7 @@ public class Main {
             return;
         }
 
-        // Print summaries using runtime polymorphism (no instanceof or casts)
+        
         for (PrintJob job : jobs) {
             System.out.println(job.summary());
         }

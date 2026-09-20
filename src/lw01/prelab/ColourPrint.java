@@ -15,7 +15,7 @@ public class ColourPrint extends PrintJob {
         } else {
             charge = (10 * 1500) + ((pages - 10) * 1000);
         }
-        // Add IDR 2,000 setup per complete copy (1 copy for base calculateCharge)
+        
         charge += 2000;
         return charge;
     }
