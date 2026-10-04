@@ -18,7 +18,7 @@ public class Main {
                     playlist.add(index, song);
                 } else if (op.equals("REMOVE")) {
                     String song = sc1.nextLine().trim();
-                    playlist.remove(song); // removes the first occurrence
+                    playlist.remove(song); 
                 }
             }
         } catch (Exception e) {
