@@ -79,21 +79,11 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        InputStream input = Main.class.getResourceAsStream("treenumbers.txt");
-
-        if (input == null) {
-            throw new FileNotFoundException("treenumbers.txt not found!");
-        }
-
-        Scanner sc = new Scanner(input);
-
-        if (!sc.hasNextLine()) {
-            throw new IOException("treenumbers.txt is empty!");
-       }
+        Scanner sc = new Scanner(Main.class.getResourceAsStream("treenumbers.txt"));
 
         Node root = null;
 
-        String[] numbers = sc.nextLine().trim().split("\\s+");
+        String[] numbers = sc.nextLine().split(" ");
 
         for (int i = 0; i < numbers.length; i++) {
             int data = Integer.parseInt(numbers[i]);
